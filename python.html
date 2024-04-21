@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>PYTHON</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+</head>
+<body class="is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">PYTHON PROJECTS</a></h1>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+        <!-- Menu -->
+        <nav id="menu">
+            <div class="inner">
+                <h2>Menu</h2>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sql.html">SQL PROJECTS</a></li>
+                    <li><a href="EXCEL.html">EXCEL PROJECTS</a></li>
+                    <li><a href="python.html">PYTHON PROJECTS</a></li>
+                    <li><a href="Tableau.html">TABLEAU PROJECTS</a></li>
+				<li><a href="power bi.html">POWER BI PROJECTS</a></li>
+                </ul>
+                <a href="#" class="close">Close</a>
+            </div>
+        </nav>
+        <!-- Wrapper -->
+        <section id="wrapper">
+            <header>
+                <div class="inner">
+                    <h2>1. AUTOMOBILE MILEAGE PREDICTION</h2>
+                    <div class="inner">
+                        <h3>Description:</h3>
+                        <ul>In this project, I aimed to build a predictive model that estimates the mileage per gallon (MPG) of automobiles based on various input variables. The dataset used contained information on 400+ cars, including attributes such as cylinders, displacement, horsepower, weight, acceleration, model year, origin, and car name. </ul>
+                        <h3>Process:</h3>
+                        <ul>
+                            <li>Imported necessary libraries including pandas, matplotlib, seaborn, and scikit-learn.</li>
+                            <li>Loaded the dataset from an Excel file and performed initial data exploration.</li>
+                            <li>Checked for missing values and performed data cleaning procedures such as type conversion and missing value imputation.</li>
+                            <li>Employed boxplot visualization to identify outliers, particularly in the acceleration column, and implemented a custom function to remove them.</li>
+                            <li>Explored data distributions, identifying patterns and anomalies.</li>
+                            <li>Investigated correlations between variables using heatmap visualization.</li>
+                            <li>Handled categorical variables using one-hot encoding to convert them into numerical format.</li>
+                            <li>Selected significant features using SelectKBest based on F-regression scores.</li>
+                            <li>Split the data into training and testing sets.</li>
+                            <li>Constructed a linear regression model using scikit-learn.</li>
+                            <li>Evaluated the model's performance on the test set, achieving an accuracy (adjusted R-squared value) of 0.86.</li>
+                        </ul>
+                        <h3>Conclusion:</h3>
+                        <ul>The developed model demonstrates strong predictive capability in estimating automobile mileage based on input features. By leveraging linear regression and robust data preprocessing techniques, I have built a reliable tool for forecasting MPG, which can be invaluable for various automotive applications, including fuel efficiency analysis.</ul>
+                        <a href="https://github.com/Jishganga/ML-PROJECTS/blob/main/AUTOMOBILE%20MILEAGE%20PREDICTION.ipynb" class="special">View Code</a>
+                    </div>
+                    <p></p>
+                </div>
+            </header>
+            <header>
+                <div class="inner">
+                    <h2>2. INVESTMENT PREDICTION</h2>
+                    <div class="inner">
+                        <h3>Description:</h3>
+                        <ul>In this machine learning project, the goal was to predict whether a bank customer would invest money or not, making it a classification problem. Logistic regression was used as the primary model, and other algorithms such as k-nearest neighbors (KNN), decision trees, naive Bayes, random forest, and support vector machines (SVM) were also explored.</ul>
+                        <h3>Process:</h3>
+                        <ul>
+                            <li>The project started by importing the dataset from an Excel file, which contained over 41k rows and 20+ variables. Initial data exploration involved checking for missing values and performing data cleaning tasks such as outlier treatment and one-hot encoding for categorical variables.</li>
+<li>Visualizations such as boxplots and histograms were used to understand the distribution of variables and identify any patterns or anomalies in the data.</li>
+<li>The final dataset was created by combining only numeric columns, and significant features were selected using SelectKBest based on F-regression scores.</li>
+<li>The data was split into training and test sets with a 70-30 split. Logistic regression was used to build the primary model, achieving an accuracy of 0.94 with an F1-score of 0.65.</li>
+<li>The performance of the model was evaluated on the test set, and comparisons were made with other algorithms including KNN, naive Bayes, decision trees, random forest, and SVM.</li></ul>
+                        <h3>Conclusion:</h3>
+                        <ul>The logistic regression model demonstrated strong predictive performance in determining whether a bank customer would invest money or not. Key drivers such as age, consumer price index, and education were identified as significant features in predicting investment decisions.</ul>
+                        <a href="https://github.com/Jishganga/ML-PROJECTS/blob/main/INVESTMENT%20PREDICTION.ipynb" class="special">View Code</a>
+                    </div>
+                    <p></p>
+                </div>
+            </header>
+            
+        </section>
+        <!-- Footer -->
+        <section id="footer">
+            <div class="inner">
+                <h2 class="major">Get in touch</h2>
+                <p></p>
+                <form method="post" action="#">
+                    <ul class="actions">
+                    </ul>
+                </form>
+                <style>
+                    .contact-list {
+                        padding: 0;
+                        list-style: none; /* Removes bullets */
+                    }
+                    .contact-list li {
+                        margin-bottom: 10px; /* Adjust spacing between items */
+                    }
+                    .contact-list li i {
+                        margin-right: 5px; /* Adjust spacing between icon and text */
+                    }
+                </style>
+               <ul class="contact-list">
+                <li><i class="icon solid fa-home"></i> KANNUR, KERALA, INDIA</li>
+                <li><i class="icon solid fa-envelope"></i> <a href="mailto:jgmk2000@gmail.com">jgmk2000@gmail.com</a></li>
+                <!-- Corrected LinkedIn icon markup -->
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/jishnu-gangadharan/">linkedin.com/jishnu-gangadharan</a></li>
+                <li><i class="icon brands fa-instagram"></i> <a href="https://www.instagram.com/.jishnugangadharan.?igsh=ZWZxc3VlcTY0NDB6">instagram.com/.jishnugangadharan.</a></li>
+            </ul>
+                <ul class="copyright">
+                    <li>&copy; Untitled Inc. All rights reserved.</li><li></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>SQL</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+</head>
+<body class="is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">SQL Projects</a></h1>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+        <!-- Menu -->
+        <nav id="menu">
+            <div class="inner">
+                <h2>Menu</h2>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+					<li><a href="sql.html">SQL PROJECTS</a></li>
+				    <li><a href="EXCEL.html">EXCEL PROJECTS</a></li>
+					<li><a href="python.html">PYTHON PROJECTS</a></li>
+                    <li><a href="Tableau.html">TABLEAU PROJECTS</a></li>
+				<li><a href="power bi.html">POWER BI PROJECTS</a></li>
+                </ul>
+                <a href="#" class="close">Close</a>
+            </div>
+        </nav>
+        <!-- Wrapper -->
+        <section id="wrapper">
+            <header>
+                <div class="inner">
+                    <h2>1. Swiggy Customer Analysis</h2>
+                    <div class="inner">
+                        <h3>Description:</h3>
+                        <ul>I worked on an analytics project using SQL, focusing on data from a food ordering app. The objective was to study and analyze the order patterns within the app's dataset. Through a series of intricate SQL queries, I aimed to extract valuable insights to improve understanding and decision-making.</ul>
+                        <ul>
+                            <li><strong>Finding the latest order placed by customers:</strong> Identified and analyzed the most recent orders placed by customers to understand recent ordering trends.</li>
+                            <li><strong>Outlet-wise analysis:</strong> Conducted detailed analyses to determine outlet-wise order counts, cumulative order counts, total bill amounts, and cumulative bill amounts. This provided insights into outlet performance and revenue generation.</li>
+                            <li><strong>Printing order summary:</strong> Generated concise order summaries to efficiently monitor order statuses and identify any discrepancies or issues.</li>
+                            <li><strong>Printing crosstab for customer-wise and outlet-wise total number of orders:</strong> Utilized crosstab queries to represent customer-wise and outlet-wise total numbers of orders, facilitating a comprehensive understanding of ordering patterns.</li>
+                            <li><strong>Printing crosstab for customer-wise and outlet-wise total sales:</strong> Similarly, utilized crosstab queries to represent customer-wise and outlet-wise total sales, providing insights into revenue generation across different customer segments and outlets.</li>
+                        </ul>
+                        <ul>To perform this analysis, I employed various SQL techniques including Common Table Expressions (CTE), RANK() OVER(PARTITION BY), nested queries, CASE statements, IF functions, joins, GROUP BY, ORDER BY, etc. These techniques enabled me to extract meaningful insights and perform complex analyses on the dataset.</ul>
+                        <a href="https://github.com/Jishganga/SQL-PROJECTS/blob/main/SWIGGY%20ANALYSIS.sql" class="special">View Code</a>
+                    </div>
+                    <p></p>
+                </div>
+            </header>
+            <header>
+                <div class="inner">
+                    <h2>2. Data Cleaning Project</h2>
+                    <div class="inner">
+                        <h3>Description:</h3>
+                        <ul>This SQL project focuses on data preprocessing tasks for the 'housingdata' table in the 'project' database. The objective is to ensure data cleanliness and improve its structure for efficient analysis. Here's an overview of the tasks performed:</ul>
+                        <ul>
+                            <li>Populating null property address: The NULL values in the 'PropertyAddress' field are replaced with values from records with the same 'ParcelID', ensuring completeness of address information.</li>
+                            <li>Splitting property address: The 'PropertyAddress' field is split into 'propertyaddress_area' and 'propertyaddress_city' to provide more granular location information for analysis.</li>
+                            <li>Splitting owner address: Similar to the property address, the 'OwnerAddress' field is split into 'owneraddress_area', 'owneraddress_city', and 'owneraddress_state' to enhance address information.</li>
+                            <li>Updating SoldAsVacant field: The 'SoldAsVacant' field values 'Y' and 'N' are standardized to 'YES' and 'NO' for consistency.</li>
+                            <li>Removing duplicates: Duplicate records are removed based on specific criteria to ensure data integrity and avoid redundancy.</li>
+                            <li>Deleting unused columns: Columns such as 'OwnerAddress', 'TaxDistrict', and the original 'PropertyAddress' are dropped from the table, streamlining the dataset for analysis.</li>
+                        </ul>
+                        <ul>These SQL queries demonstrate a systematic approach to data preprocessing, essential for ensuring data quality and enhancing the effectiveness of subsequent analysis tasks on housing data.</ul>
+                        <a href="https://github.com/Jishganga/SQL-PROJECTS/blob/main/DATA%20CLEANING.sql" class="special">View Code</a>
+                    </div>
+                    <p></p>
+                </div>
+            </header>
+            <header>
+                <div class="inner">
+                    <h2>3. World Analysis</h2>
+                    <div class="inner">
+                        <h3>Description:</h3>
+                        <ul>This SQL project is a comprehensive exploration of global data sourced from the 'world' database. The dataset includes essential fields such as continent, country name, population, life expectancy, year of independence, among others. Through a series of intricate SQL queries, the project aims to extract valuable insights and perform various analyses on the dataset.</ul>
+                        <ul>
+                            <li>Continent-wise population and country count: This query aggregates population and country count data by continent, offering an overview of global population distribution.</li>
+                            <li>Countries with population above world average: Identifies countries with populations exceeding the global average, facilitating insights into regions of significant population density.</li>
+                            <li>Countries with population above continent average: This query drills down further, identifying countries with populations surpassing the average within their respective continents, providing localized insights into population distribution.</li>
+                            <li>Top countries based on life expectancy: Lists the top five countries globally based on life expectancy, highlighting regions with the highest life expectancy rates.</li>
+                            <li>Continent-wise top countries based on life expectancy (using Common Table Expression): Utilizes a Common Table Expression (CTE) to identify the top three countries in life expectancy within each continent, offering continent-specific insights.</li>
+                            <li>Joining country data with official languages: This query joins country data with official languages sourced from the 'countrylanguage' table, providing insights into linguistic diversity across continents.</li>
+                            <li>Continent-wise cumulative population: Calculates the cumulative population for each continent, facilitating a deeper understanding of population trends at a continental level.</li>
+                            <li>Median population and corresponding country: Identifies the median population globally and the corresponding country, offering insights into regions with moderate population densities.</li>
+                            <li>Median population and corresponding country in each continent: Extends the previous analysis to identify median populations within each continent, providing localized insights into population distribution.</li>
+                            <li>Crosstab analysis of population percentages: Utilizes temporary tables to calculate population percentages and creates a crosstab analysis categorizing countries based on population density.</li>
+                            <li>Countries independent after India's independence: Lists countries that gained independence after India, offering historical insights into post-colonial nationhood.</li>
+                        </ul>
+                        <ul>This project showcases the versatility of SQL in performing complex data analyses and extracting valuable insights from diverse datasets, essential for informed decision-making and understanding global trends.</ul>
+                        <a href="https://github.com/Jishganga/SQL-PROJECTS/blob/main/COUNTRY.sql" class="special">View Code</a>
+                    </div>
+                    <p></p>
+                </div>
+            </header>
+        </section>
+        <!-- Footer -->
+        <section id="footer">
+            <div class="inner">
+                <h2 class="major">Get in touch</h2>
+                <p></p>
+                <form method="post" action="#">
+                    <ul class="actions">
+                    </ul>
+                </form>
+                <style>
+                    .contact-list {
+                        padding: 0;
+                        list-style: none; /* Removes bullets */
+                    }
+                    .contact-list li {
+                        margin-bottom: 10px; /* Adjust spacing between items */
+                    }
+                    .contact-list li i {
+                        margin-right: 5px; /* Adjust spacing between icon and text */
+                    }
+                </style>
+                <ul class="contact-list">
+                    <li><i class="icon solid fa-home"></i> KANNUR, KERALA, INDIA</li>
+                    <li><i class="icon solid fa-envelope"></i> <a href="mailto:jgmk2000@gmail.com">jgmk2000@gmail.com</a></li>
+                    <!-- Corrected LinkedIn icon markup -->
+                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/jishnu-gangadharan/">linkedin.com/jishnu-gangadharan</a></li>
+                    <li><i class="icon brands fa-instagram"></i> <a href="https://www.instagram.com/.jishnugangadharan.?igsh=ZWZxc3VlcTY0NDB6">instagram.com/.jishnugangadharan.</a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Untitled Inc. All rights reserved.</li><li></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
